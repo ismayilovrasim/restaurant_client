@@ -1,0 +1,118 @@
+* {
+    scroll-behavior: smooth !important;
+}
+
+
+
+.head-slide-text-container {
+    position: relative !important;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.head-slide-text-container h3,
+.head-slide-text-container p {
+    position: relative;
+    right: -100%;
+    transition: all 1s;
+    color: aliceblue;
+}
+
+.slick-current .head-slide-text-container h3,
+.slick-current .head-slide-text-container p {
+    right: 0;
+    color: aliceblue;
+    display: block;
+
+}
+
+.head-slide-text-container .head-slide-text-container-title {
+    position: relative;
+    top: -200px !important;
+    right: initial !important;
+    transition: all 1s;
+}
+
+
+.slick-current .head-slide-text-container .head-slide-text-container-title {
+    top: 0 !important;
+}
+
+.head-slide-text-container a {
+    position: relative;
+    bottom: -400px !important;
+    right: initial !important;
+    transition: all 1s;
+}
+
+.slick-current .head-slide-text-container a {
+    bottom: 0 !important;
+}
+
+.banner-content {
+    position: relative;
+    top: 30%;
+}
+/* 
+.paruct-container {
+    max-width: 1270px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+} */
+
+.ant-tabs-nav-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.fl-progress {
+    width: 70px;
+    height: 70px;
+    background-color: #07828230;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -100px;
+    right: 10px;
+    z-index: 99999999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+    place-items: center;
+    transition: all .3s;
+}
+
+.fl-progress.bottom-spacing {
+    bottom: 30px;
+}
+
+.fl-progress-back-to-top,
+.fl-progress-number {
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+}
+
+.fl-progress-back-to-top {
+    display: none;
+}
+
+.fl-progress:hover .fl-progress-back-to-top {
+    display: grid;
+    scroll-behavior: smooth;
+}
+
+
+.fl-progress:hover .fl-progress-number {
+    display: none
+}
